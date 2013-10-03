@@ -1,0 +1,46 @@
+#!/bin/sh
+
+IFS='
+'
+red='\e[0;31m'
+green='\e[0;32m'
+NC='\e[0m'
+bold=`tput bold`
+normal=`tput sgr0`
+input=`cat input`;
+g++ -oparser Parser.cpp
+./parser <<EOF > output
+$input
+EOF
+
+solution=(`cat solution`);
+output=(`cat output`);
+input=($input);
+numlines=${#solution[@]}
+numfail=0
+
+for i in `seq 1 $numlines` ; do
+    solline=${solution["$i"]}
+    outline=${output["$i"]}
+    inline=${input["$i"]}
+    if [ ! "$solline" = "$outline" ] ; then
+        numfail=$((numfail + 1))
+        echo -e "********************"
+        echo -e "${red}Failed${NC} unit test ${bold}$i${normal}: "
+        echo "$inline" 
+        echo "Expected: "
+        echo "$solline"
+        echo "Your program outputted: "
+        echo "$outline"
+        echo -e "********************\n"
+    else
+        echo -e "${green}Passed${NC} unit test ${bold}$i${normal}\n"
+    fi
+
+done
+
+if [ $numfail = 0 ] ; then
+    echo -e "Summary: ${green}All unit tests passed.${NC}"
+else
+    echo -e "Summary: $numfail / $numlines ${red}${bold}failed${NC}${normal} unit tests."
+fi
