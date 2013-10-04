@@ -59,7 +59,6 @@ printNode 4999
 printNode 5000
 printNode 5001
 printNode 2147483647
-printNode 2147483648
 printNode 
 printNode str
 printNode 1str
