@@ -22,4 +22,6 @@ Then any failed unit tests will be outputted to the console.
 Everything is opensource, and anyone is free to contribute. If you can think of other corner-case unit tests
 that are not covered by the input, please append them to the input file along with the correct output to the solution file.
 
+I have tested the script to make sure it functions properly, however please make sure to have a backup of your source-code anyway before running the script.
+
 
