@@ -69,6 +69,11 @@ printNode 1 a lot of arg u ments
 printNode printNode
 printNode 1\ndeleteR
 printNode -0
+printNode +
+printNode -
+printNode .
+printNode --34
+printNode ++34
 
 deleteR
 deleteR all
@@ -111,7 +116,9 @@ modifyR name .0
 modifyR name .00900000099
 modifyR name 0.991_
 modifyR name 0.991\n
-
+modifyR name -  
+modifyR name +
+modifyR name .  
 insertR
 insertR all
 insertR name
@@ -131,4 +138,3 @@ insertR all -12 1 1 too many args
 insertR name 1 1 2 t o o m a n y a r g s f o r y o u t o h a n d l e .
 insertR name +45 +2 +4
 insertR name +.12312 +1 1
-
