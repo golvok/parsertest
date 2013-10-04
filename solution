@@ -68,6 +68,11 @@
 > Error: invalid argument
 > Error: invalid argument
 > Print: node 0
+> Error: invalid argument
+> Error: invalid argument
+> Error: invalid argument
+> Error: invalid argument
+> Error: invalid argument
 > Error: invalid command
 > Error: too few arguments
 > Deleted: all resistors
@@ -108,6 +113,9 @@
 > Modified: resistor name to -0.00 Ohms
 > Modified: resistor name to 0.00 Ohms
 > Modified: resistor name to 0.01 Ohms
+> Error: invalid argument
+> Error: invalid argument
+> Error: invalid argument
 > Error: invalid argument
 > Error: invalid argument
 > Error: invalid command
