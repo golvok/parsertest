@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 IFS='
 '
@@ -7,22 +7,28 @@ green='\e[0;32m'
 NC='\e[0m'
 bold=`tput bold`
 normal=`tput sgr0`
-input=`cat input`;
-g++ -oparser Parser.cpp
-./parser <<EOF > output
+input=`cat input`
+
+if [ ! -e "Parser.cpp" ] ; then
+    echo "Make sure Parser.cpp is in this directory."
+    exit 1
+elif [ ! -e "solution" ] || [ ! -e "input" ] ; then
+    echo "Make sure the 'solution' and 'input' files are in this directory."
+    exit 2
+fi
+
+g++ -oParser Parser.cpp
+./Parser <<EOF > output
 $input
 EOF
 
-solution=(`cat solution`);
-output=(`cat output`);
-input=($input);
-numlines=${#solution[@]}
+numlines=`wc -l < solution`
 numfail=0
 
 for i in `seq 1 $numlines` ; do
-    solline=${solution["$i"]}
-    outline=${output["$i"]}
-    inline=${input["$i"]}
+    solline=`sed "${i}q;d" solution`
+    outline=`sed "${i}q;d" output`
+    inline=`sed "${i}q;d" input`
     if [ ! "$solline" = "$outline" ] ; then
         numfail=$((numfail + 1))
         echo -e "********************"
@@ -33,8 +39,6 @@ for i in `seq 1 $numlines` ; do
         echo "Your program outputted: "
         echo "$outline"
         echo -e "********************\n"
-    else
-        echo -e "${green}Passed${NC} unit test ${bold}$i${normal}\n"
     fi
 
 done
