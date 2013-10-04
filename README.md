@@ -10,6 +10,7 @@ To download the script and unit tests, check the releases.
 To get it as a zip file from the terminal, use:
 
 wget https://github.com/ECE1T6/parsertest/archive/v1.0.zip
+
 unzip v1.0
 
 Make sure that Parser.cpp is in the same directory as the ptest script as well as the input and solution files.
