@@ -103,9 +103,9 @@
 > Error: invalid argument
 > Error: invalid argument
 > Modified: resistor name to 9.00 Ohms
-> Modified: resistor name to 0.00 Ohms
-> Modified: resistor name to 0.00 Ohms
-> Modified: resistor name to 0.00 Ohms
+> Modified: resistor name to -0.00 Ohms
+> Modified: resistor name to -0.00 Ohms
+> Modified: resistor name to -0.00 Ohms
 > Modified: resistor name to 0.00 Ohms
 > Modified: resistor name to 0.01 Ohms
 > Error: invalid argument
