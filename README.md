@@ -8,6 +8,7 @@ It will produce an 'output' file which will be compared against the 'solution' f
 
 To download the script and unit tests, check the releases.
 To get it as a zip file from the terminal, use:
+
 wget https://github.com/ECE1T6/parsertest/archive/v1.0.zip
 unzip v1.0
 
