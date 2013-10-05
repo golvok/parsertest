@@ -47,6 +47,7 @@ printNode 0001
 printNode 00010
 printNode 1000
 printNode   1000.
+printNode 10.0
 printNode .1000
 printNode 1.1
 printNode -4

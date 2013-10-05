@@ -49,6 +49,7 @@
 > Error: invalid argument
 > Error: invalid argument
 > Error: invalid argument
+> Error: invalid argument
 > Error: node -4 is out of permitted range 0-5000
 > Error: invalid argument
 > Error: invalid argument
@@ -138,4 +139,4 @@
 > Error: too many arguments
 > Inserted: resistor name 45.00 Ohms 2 -> 4
 > Error: both terminals of resistor connect to node 1
-> 
+> Error: invalid command
