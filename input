@@ -119,6 +119,7 @@ modifyR name 0.991\n
 modifyR name -  
 modifyR name +
 modifyR name .  
+modifyR printR 2
 
 insertR
 insertR all
@@ -139,3 +140,10 @@ insertR all -12 1 1 too many args
 insertR name 1 1 2 t o o m a n y a r g s f o r y o u t o h a n d l e .
 insertR name +45 +2 +4
 insertR name +.12312 +1 1
+insertR modifyR 100 1 2
+
+printr
+printnode
+deletr
+modifyr
+insertr

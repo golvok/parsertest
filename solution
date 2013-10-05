@@ -119,6 +119,7 @@
 > Error: invalid argument
 > Error: invalid argument
 > Error: invalid argument
+> Modified: resistor printR to 2.00 Ohms
 > Error: invalid command
 > Error: too few arguments
 > Error: resistor name cannot be the keyword "all"
@@ -139,4 +140,9 @@
 > Error: too many arguments
 > Inserted: resistor name 45.00 Ohms 2 -> 4
 > Error: both terminals of resistor connect to node 1
+> Inserted: resistor modifyR 100.00 Ohms 1 -> 2
+> Error: invalid command
+> Error: invalid command
+> Error: invalid command
+> Error: invalid command
 > Error: invalid command
