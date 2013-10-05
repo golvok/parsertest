@@ -13,9 +13,9 @@ To get the latest release of the script and unit tests, check the [releases]("ht
 
 To get it as a zip file from the terminal, use:  (Note: this is only as recent as we've remembered to update this file)
 
-    wget https://github.com/ECE1T6/parsertest/archive/v1.1.zip
+    wget https://github.com/ECE1T6/parsertest/archive/v1.2.zip
 
-    unzip v1.1
+    unzip v1.2
 
 or, if git is installed, do either this:
 
