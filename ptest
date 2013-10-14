@@ -9,7 +9,7 @@ bold=`tput bold`
 normal=`tput sgr0`
 input=`cat input`
 
-if [ ! -e "Parser.cpp" ] ; then
+if [ ! -e "../Parser.cpp" ] ; then
     echo "Make sure Parser.cpp is in this directory."
     exit 1
 elif [ ! -e "solution" ] || [ ! -e "input" ] ; then
@@ -17,8 +17,7 @@ elif [ ! -e "solution" ] || [ ! -e "input" ] ; then
     exit 2
 fi
 
-g++ -oParser Parser.cpp
-./Parser <<EOF > output
+../Parser <<EOF > output
 $input
 EOF
 
